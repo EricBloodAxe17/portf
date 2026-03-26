@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Your Name</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body {
+    margin: 0;
+    background: #000;
+    color: #e5e5e5;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+    max-width: 900px; /* slightly increased for space */
+    margin: 100px auto;
+    padding: 20px;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* RIGHT SIDE */
+.nav {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* MAIN LAYOUT */
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+/* LEFT */
+.left {
+    max-width: 600px;
+}
+
+/* TEXT */
+.content {
+    margin-top: 40px;
+    line-height: 1.7;
+    font-size: 19px;
+}
+
+/* LINKS */
+.links {
+    margin-top: 40px;
+}
+
+.links a {
+    display: block;
+    color: #888;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.links a:hover {
+    color: #fff;
+}
+
+/* RIGHT IMAGE */
+.right img {
+    width: 180px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s ease;
+}
+
+.right img:hover {
+    transform: scale(1.03);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Vedhant Choudhary</h1>
+
+        <div class="nav">
+            <span>Bangalore, India</span>
+            <span id="time"></span>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+
+        <!-- LEFT SIDE -->
+        <div class="left">
+
+            <div class="content">
+                Hi, I am interested in global shipping markets and trade flows, and I am learning how freight dynamics and market cycles shape the industry. I am building my understanding through projects and data analysis, while also developing a foundation in economics and logistics. I am curious about patterns, movement, and how global systems connect. I am working towards a career in shipbroking.
+            </div>
+
+            <div class="links">
+                <a href="certificates.html" target="_blank">→ Certificates</a>
+                <a href="projects.html" target="_blank">→ Projects</a>
+                <a href="resume.pdf" target="_blank">→ Resume</a>
+            </div>
+
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="right">
+            <img src="profile.jpeg" alt="Profile">
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function updateTime() {
+    const options = {
+        timeZone: "Asia/Kolkata",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+    };
+
+    const time = new Intl.DateTimeFormat("en-IN", options).format(new Date());
+    document.getElementById("time").innerText = time;
+}
+
+setInterval(updateTime, 1000);
+updateTime();
+</script>
+
+</body>
+</html>
