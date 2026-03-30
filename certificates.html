@@ -11,11 +11,24 @@ body {
     padding: 60px;
 }
 
+/* Entire link */
 a {
     color: #aaa;
     text-decoration: none;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+/* Only underline course name */
+.course {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* Hover effect */
+a:hover {
+    opacity: 0.7;
 }
 </style>
 </head>
@@ -24,12 +37,29 @@ a {
 
 <h2>Certificates</h2>
 
-<a href="#">Yale – Financial Markets</a>
-<a href="#">Illinois – Microeconomics</a>
-<a href="#">Rice – Macroeconomics</a>
-<a href="#">CFI – Economics for Capital Markets</a>
-<a href="#">Colorado Boulder –  International Supply Chain & Logistics </a>
-<a href="#">ESSEC Business School –  Negotiation, Mediation and Conflict Resolution Specialization</a>
+<a href="https://www.coursera.org/learn/financial-markets-global" target="_blank">
+    Yale – <span class="course">Financial Markets</span> ↗
+</a>
+
+<a href="https://coursera.org/share/85d1e664937ecf18973bcbdf78525191" target="_blank">
+    Illinois – <span class="course">Microeconomics</span> ↗
+</a>
+
+<a href="https://www.coursera.org/learn/macro-economics" target="_blank">
+    Rice – <span class="course">Macroeconomics</span> ↗
+</a>
+
+<a href="https://courses.corporatefinanceinstitute.com" target="_blank">
+    CFI – <span class="course">Economics for Capital Markets</span> ↗
+</a>
+
+<a href="https://www.coursera.org/learn/supply-chain-logistics" target="_blank">
+    Colorado Boulder – <span class="course">International Supply Chain & Logistics</span> ↗
+</a>
+
+<a href="https://www.coursera.org/specializations/negotiation-mediation-conflict-resolution" target="_blank">
+    ESSEC Business School – <span class="course">Negotiation, Mediation and Conflict Resolution</span> ↗
+</a>
 
 </body>
 </html>
